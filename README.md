@@ -14,5 +14,5 @@
 
 ## 使用说明
 
-成品展示：[amrom.tk](https://amrom.tk)
+成品展示：[amrom.tk](https://blog.amrom.tk)
 

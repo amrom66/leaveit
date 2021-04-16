@@ -2,7 +2,7 @@ name = "leaveit"
 license = "MIT"
 licenselink = "https://github.com/linjinbao/leaveit/blob/main/LICENSE"
 description = "A simple, clean blog theme for hugo."
-homepage = "https://amrom.tk"
+homepage = "https://blog.amrom.tk"
 tags = [
   "blog",
   "minimal",
@@ -24,6 +24,6 @@ min_version = "0.41"
 
 [author]
   name = "amrom"
-  homepage = "https://amrom.tk"
+  homepage = "https://blog.amrom.tk"
 [params]
   home_mode = "post"
