@@ -1,242 +1,227 @@
 /** Post **/
 
-.post-warp {
-    position: relative;
-    width: 100%;
-    max-width: 780px;
-    margin: 0 auto;
-    padding-top: 2rem;
-
-    .post-header h1 {
+.post-warp
+{
+    position: relative;  width: 100%;  max-width: 780px;  margin: 0 auto;  padding-top: 2rem;
+    .post-header h1
+    {
         margin: 0 !important;
     }
 
-    .post-title {
-        font-size: 2em;
-        line-height: 1.5em;
+    .post-title
+    {
+        font-size: 2em;  line-height: 1.5em;
     }
 
-    .post-meta {
-        color: rgba(85, 85, 85, 0.52941) !important;
-        .dark-theme & {
+    .post-meta
+    {
+        color: rgba(85, 85, 85, .52941) !important;
+        .dark-theme &
+        {
             color: $dark-font-secondary-color !important;
         }
 
-        a {
+        a
+        {
             color: $light-post-link-color;
-            .dark-theme & {
+            .dark-theme &
+            {
                 color: $dark-post-link-color;
             }
 
-            &:hover {
+            &:hover
+            {
                 color: $light-post-link-hover-color;
-                .dark-theme & {
+                .dark-theme &
+                {
                     color: $dark-post-link-hover-color;
                 }
             }
         }
     }
 
-    .post-content {
+    .post-content
+    {
         padding-top: 2rem;
 
         h2,
         h3,
         h4,
         h5,
-        h6 {
-            padding-top: .8em;
-            padding-bottom: .3em;
+        h6
+        {
+            padding-top: .8em;  padding-bottom: .3em;
         }
-        h2::before {
-            content: "#";
-            margin-right: 5px;
-            color: $light-post-link-color;
-            .dark-theme & {
+        h2::before
+        {
+            margin-right: 5px;  content: '#';  color: $light-post-link-color;
+
+            .dark-theme &
+            {
                 color: $dark-post-link-color;
             }
         }
 
-        h3::before {
-            content: "|";
-            margin-right: 5px;
-            color: $light-post-link-color;
+        h3::before
+        {
+            margin-right: 5px;  content: '|';  color: $light-post-link-color;
 
-            .dark-theme & {
+            .dark-theme &
+            {
                 color: $dark-post-link-color;
             }
         }
 
-        a {
+        a
+        {
             color: $light-post-link-color;
-            .dark-theme & {
+            .dark-theme &
+            {
                 color: $dark-post-link-color;
             }
         }
 
-        a:hover {
+        a:hover
+        {
             color: $light-post-link-hover-color;
-            .dark-theme &:hover {
-                color: $dark-post-link-hover-color;
-                font-weight: bold;
-                text-decoration: underline;
+            .dark-theme &:hover
+            {
+                font-weight: bold;  text-decoration: underline;  color: $dark-post-link-hover-color;
             }
         }
 
         code,
-        pre {
-            padding: 7px;
-            font-size: 13px;
-            font-family: Consolas, Monaco, Menlo, Consolas, monospace;
-            word-break: break-all;
-            word-wrap: break-word;
+        pre
+        {
+            font-family: Consolas, Monaco, Menlo, Consolas, monospace;  font-size: 13px;  padding: 7px;  word-wrap: break-word;  word-break: break-all;
         }
 
-         
-		code:not([class]) {
-			padding: 2px 4px;
-			background: #f7f9fa;
-			color: #337769;
-			border-radius: 2px;
-			margin-left: 3px;
-			margin-right: 3px;
-			
-			.dark-theme &:not([class]) {
-				background: #2d2d2d;
-				color: #e06c75;
-			}
-		}
-
-        ul {
-            padding-left: 2em;
-        }
-
-        table {
-            max-width: 100%;
-            margin: 10px 0;
-            border-spacing: 0;
-            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
-
-            th,
-            td {
-                padding: 5px 15px;
-                border: 1px double #ebe9f5;
+        code:not([class])
+        {
+            margin-right: 3px;  margin-left: 3px;  padding: 2px 4px;  color: #337769;  border-radius: 2px;  background: #f7f9fa;
+            .dark-theme &:not([class])
+            {
+                color: #e06c75;  background: #2d2d2d;
             }
         }
 
-        figure {
+        ul
+        {
+            padding-left: 2em;
+        }
+
+        table
+        {
+            max-width: 100%;  margin: 10px 0;  border-spacing: 0;  box-shadow: 2px 2px 3px rgba(0, 0, 0, .125);
+            th,
+            td
+            {
+                padding: 5px 15px;  border: 1px double #ebe9f5;
+            }
+        }
+
+        figure
+        {
             text-align: center;
-            img:hover{
+            img:hover
+            {
                 cursor: zoom-in;
             }
         }
 
-        .image-caption:not(:empty) {
-            min-width: 20%;
-            max-width: 80%;
-            display: inline-block;
-            padding: 10px;
-            margin: 0 auto;
-            border-bottom: 1px solid #d9d9d9;
-            font-size: 14px;
-            color: #969696;
-            line-height: 1.7;
+        .image-caption:not(:empty)
+        {
+            font-size: 14px;  line-height: 1.7;  display: inline-block;  min-width: 20%;  max-width: 80%;  margin: 0 auto;  padding: 10px;  color: #969696;  border-bottom: 1px solid #d9d9d9;
         }
 
-        img {
-            display: block;
-            max-width: 80%;
-            height: auto;
-            margin: 0 auto;
-            overflow: hidden;
+        img
+        {
+            display: block;  overflow: hidden;  max-width: 80%;  height: auto;  margin: 0 auto;
         }
 
-     
 
-        img[data-action="zoom"] {
+
+        img[data-action='zoom']
+        {
             cursor: zoom-in;
         }
 
-        .featured_image {
-            width: 100% !important;
-            max-width: 100% !important;
-            height: auto !important;
-            margin: 0 !important;
+        .featured_image
+        {
+            width: 100% !important;  max-width: 100% !important;  height: auto !important;  margin: 0 !important;
         }
     }
 
-    p {
-        font-size: 1em;
-        margin: .5em 0 .5em 0;
+    p
+    {
+        font-size: 1em;  margin: .5em 0 .5em 0;
     }
 
-    .post-copyright {
-        margin-top: 5rem;
-        border-top: 1px solid $light-border-color;
-        border-bottom: 1px solid $light-border-color;
-
-        .copyright-item {
+    .post-copyright
+    {
+        margin-top: 5rem;  border-top: 1px solid $light-border-color;  border-bottom: 1px solid $light-border-color;
+        .copyright-item
+        {
             margin: 5px 0;
         }
 
-        .lincese {
+        .lincese
+        {
             font-weight: bold;
-            & a {}
         }
 
-        .dark-theme & {
-            border-top: 1px solid $dark-border-color;
-            border-bottom: 1px solid $dark-border-color;
+        .dark-theme &
+        {
+            border-top: 1px solid $dark-border-color;  border-bottom: 1px solid $dark-border-color;
         }
     }
 
-    .post-tags {
-        padding: 1rem 0 1rem;
-        display: flex;
-        justify-content: space-between;
-
+    .post-tags
+    {
+        display: flex;  justify-content: space-between;  padding: 1rem 0 1rem;
     }
 
-
-    .post-nav {
-
+    .post-nav
+    {
         &:before,
-        &:after {
-            content: " ";
-            display: table;
+        &:after
+        {
+            display: table;  content: ' ';
         }
 
         & a.prev,
-        & a.next {
-            font-weight: 600;
-            font-size: 16px;
-
-            transition-property: transform;
-            transition-timing-function: ease-out;
-            transition-duration: 0.3s;
+        & a.next
+        {
+            font-size: 16px;  font-weight: 600;  transition-timing-function: ease-out;  transition-duration: .3s;  transition-property: transform;
         }
 
-        & a.prev {
+        & a.prev
+        {
             float: left;
         }
 
-        & a.prev:hover {
+        & a.prev:hover
+        {
             transform: translateX(-4px);
         }
 
-        & a.next {
+        & a.next
+        {
             float: right;
         }
-        & a.next:hover {
+        & a.next:hover
+        {
             transform: translateX(4px);
         }
     }
 
-    .tag:not(:last-child) a::after {
-        content: " / ";
+    .tag:not(:last-child) a::after
+    {
+        content: ' / ';
     }
 
-    .post-comment{
+    .post-comment
+    {
         padding: 3em 0;
     }
 }

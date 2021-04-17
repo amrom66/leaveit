@@ -1,31 +1,30 @@
-.tag-cloud-tags {
+.tag-cloud-tags
+{
     margin: 10px 0;
 
-    a {
-        display: inline-block;
-        position: relative;
-        margin: 5px 10px;
-        word-wrap: break-word;
-        transition-duration: .3s;
-        transition-property: transform;
-        transition-timing-function: ease-out;
+    a
+    {
+        position: relative;  display: inline-block;  margin: 5px 10px;  transition-timing-function: ease-out;  transition-duration: .3s;  transition-property: transform;  word-wrap: break-word;
 
         &:active,
         &:focus,
-        &:hover {
-            color: $light-global-link-hover-color;
-            transform: scale(1.1);
+        &:hover
+        {
+            transform: scale(1.1);  color: $light-global-link-hover-color;
 
-            .dark-theme &{
-            	 color: $dark-global-link-hover-color;
+            .dark-theme &
+            {
+                color: $dark-global-link-hover-color;
             }
         }
 
-        small {
+        small
+        {
             color: $light-font-secondary-color;
-            
-            .dark-theme &{
-                 color: $dark-global-link-hover-color;
+
+            .dark-theme &
+            {
+                color: $dark-global-link-hover-color;
             }
         }
     }
