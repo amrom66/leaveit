@@ -22,7 +22,7 @@
     _Blog.changeTitle = function() {
         var currentTitle = document.title;
         window.onblur = function() {
-            document.title = 'linjinbao';
+            document.title = '打工笔记';
         }
         window.onfocus = function() {
             document.title = currentTitle;
