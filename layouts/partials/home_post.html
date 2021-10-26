@@ -14,7 +14,7 @@
     {{ end }}
  
 	</div>
-	{{ range (.Site.RegularPages) }}
+	{{ range first 5 (.Site.RegularPages) }}
 		<article class="post" itemscope itemscope="" itemtype="http://schema.org/Article">
 
 			<header class="post-header">
@@ -58,5 +58,7 @@
 			</div>
 		</article>
 	{{ end }}
-
+	<div>
+		<h1 class="post-title" itemprop="name headline"><a href="/posts/">所有文章</a></h1>
+	</div>
 </div>
