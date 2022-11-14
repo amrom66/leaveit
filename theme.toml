@@ -1,6 +1,6 @@
 name = "leaveit"
 license = "MIT"
-licenselink = "https://github.com/linjinbao/leaveit/blob/main/LICENSE"
+licenselink = "https://github.com/amrom66/leaveit/blob/main/LICENSE"
 description = "A simple, clean blog theme for hugo."
 homepage = "https://blog.amrom.tk"
 tags = [
