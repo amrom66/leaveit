@@ -43,3 +43,7 @@
   {{ end  }}
 {{ .Scratch.Set "cdn_url" $cdn_url }}
 {{ template "_internal/google_analytics_async.html" . }}
+
+{{ if .Site.Params.GoogleAnalyticsID }}
+  {{ partial "analytics-gtag.html" . }}
+{{ end }}
